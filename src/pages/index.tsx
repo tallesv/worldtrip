@@ -1,7 +1,8 @@
-import { Box, Flex, Image, Text, useBreakpointValue } from '@chakra-ui/react'
+import { Box, Flex, Image, Text, useBreakpointValue, SimpleGrid } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import React from 'react'
 import { Header } from '../components/Header'
+import { TravelType } from '../components/TravelType'
 
 const Home: NextPage = () => {
 
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
         bgImage="url(/background.png)"
         bgSize="cover"
         bgRepeat="no-repeat"
-        justifyContent={{ lg: "space-around" }}
+        justifyContent={{base: "center", lg: "space-around" }}
       >
         <Flex 
           mt={["2", "14"]}
@@ -43,6 +44,16 @@ const Home: NextPage = () => {
 
         { isWideVersion && <Image src="airplane.png" alt="airplane" position="relative" top="65" />}
       </Flex>
+
+      <Box maxW={["400", "1560"]} m="100px auto" px="10">
+        <SimpleGrid gap="4" minChildWidth="120px" justifyItems='center'>
+          <TravelType src="nightlife" />
+          <TravelType src="beach" />
+          <TravelType src="modern" />
+          <TravelType src="classic" />
+          <TravelType src="more" />
+        </SimpleGrid>
+      </Box>
     </Box>
   )
 }
