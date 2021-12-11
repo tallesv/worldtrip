@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import React from 'react'
 import { Header } from '../components/Header'
 import { TravelType } from '../components/TravelType'
+import { ContinentsCarousel } from '../components/ContinentsCarousel'
 
 const Home: NextPage = () => {
 
@@ -54,6 +55,8 @@ const Home: NextPage = () => {
           <TravelType src="more" />
         </SimpleGrid>
       </Box>
+
+      <ContinentsCarousel />
     </Box>
   )
 }
