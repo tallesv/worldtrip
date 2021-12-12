@@ -47,7 +47,7 @@ export function ContinentsCarousel() {
 
   return (
     <Box
-      maxW="1240"
+      maxW="1560"
       h={["250", "450"]}
       m="20px auto"
     >
