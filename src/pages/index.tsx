@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         { isWideVersion && <Image src="airplane.png" alt="airplane" position="relative" top="65" />}
       </Flex>
 
-      <Box maxW={["400", "1560"]} m="100px auto" px="10">
+      <Box maxW={["400", "1560"]} my={[30, 100]} mx="auto" px="10">
         <SimpleGrid gap="4" minChildWidth="120px" justifyItems='center'>
           <TravelType src="nightlife" />
           <TravelType src="beach" />
@@ -55,6 +55,18 @@ const Home: NextPage = () => {
           <TravelType src="more" />
         </SimpleGrid>
       </Box>
+
+
+      <Box m="auto" w="10%" bgColor="gray.450" borderBottom="2px" mb={[5, 10]} />
+
+      <Flex
+        direction="column"
+        align="center"
+        my={[4 ,10]}
+      >
+        <Text fontSize={[20, 26, 32]} fontWeight="500"> Vamos nessa ?</Text>
+        <Text fontSize={[20, 26, 32]} fontWeight="500">Então escolha o seu continente</Text>
+      </Flex>
 
       <ContinentsCarousel />
     </Box>
