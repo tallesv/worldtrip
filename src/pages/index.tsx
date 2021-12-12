@@ -17,16 +17,16 @@ const Home: NextPage = () => {
       <Header />
 
       <Flex
-        h={["163", "368"]}
-        p={["4", "10"]}
+        h={["163", "280"]}
+        p={["5", "5"]}
         bgImage="url(/background.png)"
         bgSize="cover"
         bgRepeat="no-repeat"
         justifyContent={{base: "center", lg: "space-around" }}
       >
         <Flex 
-          mt={["2", "14"]}
-          mb={["1", "3"]}
+          mt={["2", "8"]}
+          mb={["1", "2"]}
           flexDirection="column" 
           justifyContent="space-between"
         >
@@ -43,10 +43,10 @@ const Home: NextPage = () => {
           </Text>
         </Flex>
 
-        { isWideVersion && <Image src="airplane.png" alt="airplane" position="relative" top="65" />}
+        { isWideVersion && <Image src="airplane.png" alt="airplane" position="relative" top="41" />}
       </Flex>
 
-      <Box maxW={["400", "1560"]} my={[30, 100]} mx="auto" px="10">
+      <Box maxW={["400", "1560"]} my={[5, 61]} mx="auto" px="10">
         <SimpleGrid gap="4" minChildWidth="120px" justifyItems='center'>
           <TravelType src="nightlife" />
           <TravelType src="beach" />
