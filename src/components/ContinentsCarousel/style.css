@@ -22,6 +22,7 @@ span.swiper-pagination-bullet-active {
   text-align: center;
   font-size: 18px;
   padding: 2rem 0;
+  cursor: pointer;
 
   /* Center slide text vertically */
   display: -webkit-box;
