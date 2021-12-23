@@ -10,25 +10,29 @@ export function Header() {
   if (pathname === '/') {
     return (
       <Flex h={[71, 81]} justifyContent="center">
+        <Flex w={81} />
         <Image src="/logo.png" alt="logo" height={150} width={150} />
+        <Flex w={81} />
       </Flex>
     )
   }
 
   return (
-    <Flex maxW={1000} mx="auto">
-      <Button
-        onClick={() => push('/')}
-        alignSelf="center"
-        _hover={{ bg: 'unset' }}
-        _focus={{ borderColor: 'unset' }}
-        _active={{ borderColor: 'unset' }}
-      >
-        <Image src="/back.png" alt="back" height={35} width={30}/>
-      </Button>
-    <Flex h={[71, 81]} w="100%" justifyContent="center" pr={['15%','7%', 0]}>
+    <Flex h={[71, 81]} maxW={1600} mx="auto" justifyContent="space-between">
+      <Flex w={81} justifyContent="center">
+        <Button
+          onClick={() => push('/')}
+          alignSelf="center"
+          _hover={{ bg: 'unset' }}
+          _focus={{ borderColor: 'unset' }}
+          _active={{ borderColor: 'unset' }}
+        >
+          <Image src="/back.png" alt="back" height={35} width={30}/>
+        </Button>
+        </Flex>
       <Image src="/logo.png" alt="logo" height={150} width={150} />
-    </Flex>
+
+      <Flex width={81} />
     </Flex>
   )
 }
