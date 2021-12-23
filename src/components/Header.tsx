@@ -23,6 +23,7 @@ export function Header() {
         <Button
           onClick={() => push('/')}
           alignSelf="center"
+          bgColor="unset"
           _hover={{ bg: 'unset' }}
           _focus={{ borderColor: 'unset' }}
           _active={{ borderColor: 'unset' }}
