@@ -32,7 +32,8 @@ export default function Continent ({ continent, about, banner, contriesAmount, l
         bgImage={`url(${banner})`}
         bgSize="cover"
         h={[150, 450]}
-        p={20}
+        px={{ base: 42, '2xl': 200 }}
+        py={20}
         justifyContent={["center", "flex-start"]}
         alignItems={["center", "flex-end"]}
       >
