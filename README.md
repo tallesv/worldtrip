@@ -18,6 +18,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 - [TypeScript](https://www.typescriptlang.org/)
 - [Next.js](https://nextjs.org/)
 - [Chakra UI](https://chakra-ui.com/)
+- [Swiper](https://swiperjs.com/)
 
 ### 🎲 Excutando a aplicação
 
